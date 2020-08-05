@@ -1,0 +1,37 @@
+{% extends 'newsFeed/base.html' %}
+{% load static %}
+{% block extrahead %}
+<link rel="stylesheet" type="text/css" href="{% static 'newsFeed/fields.css' %}">
+{% endblock %}
+
+
+
+{% block content %}
+
+<div class="container">
+    <h2 class="title"> علوم انسانی </h2><br><br>
+    <h4>گرایش ها</h4>
+    <div id="fields">
+        <div style="width: 50%; float:left">
+            <div>
+                <ul class="fieldlist" dir="rtl">
+                     <li>First item</li>
+                     <li>Second item</li>
+                     <li>Third item</li>
+                </ul>
+            </div>
+        </div>
+
+        <div style="width: 50%; float:right">
+            <div>
+                <ul class="fieldlist" dir="rtl">
+                     <li>First item</li>
+                     <li>Second item</li>
+                     <li>Third item</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

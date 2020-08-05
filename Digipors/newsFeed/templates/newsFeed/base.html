@@ -1,0 +1,60 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <link rel="stylesheet" type="text/css" href="{% static 'newsFeed/main.css' %}">
+      <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+      {% block extrahead %}{% endblock %}
+</head>
+<body>
+
+        <nav class="navbar navbar-inverse" >
+          <div class="container-fluid">
+
+            <ul class="nav navbar-nav navbar-right">
+              <div class="navbar-header">
+              <a class="navbar-brand" href="#">دیجی پرس </a>
+              </div>
+              <li ><a href="#"><i class="fas fa-home" style="margin: 5px"></i>خانه</a></li>
+
+              <!-- Dropdown -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"><i class='fas fa-book-open' style="margin: 5px;"></i>رشته ها<span class="caret" style="margin: 5px;"></span></a>
+
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="{% url 'humanities' %}">علوم انسانی</a><br>
+                  <a class="dropdown-item" href="{% url 'medical' %}">علوم پزشکی</a><br>
+                  <a class="dropdown-item disabled" href="#">علوم مهندسی</a><br>
+                  <a class="dropdown-item disabled" href="#">علوم کشاورزی</a><br>
+                  <a class="dropdown-item disabled" href="#">علوم پایه</a><br>
+                </div>
+              </li>
+              <li><a href="#"><i class="fas fa-shopping-cart" style="margin: 5px"></i> سفارش پروژه</a></li>
+              <li><a href="#"><i class="fas fa-question-circle" style="margin: 5px"></i>راهنما</a></li>
+
+            </ul>
+          </div>
+        </nav>
+
+
+
+
+
+
+<div>
+    {% block content %}
+    {% endblock %}
+
+</div>
+
+
+</body>
+</html>

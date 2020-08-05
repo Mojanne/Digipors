@@ -1,0 +1,28 @@
+h2, h4{
+color: #282E38;
+text-align: center;
+font-weight: 600;
+}
+
+
+.container{
+background-color: gray;
+width: 50%;
+height: 70%;
+margin-top: 80px;
+border-radius: 25px;
+border-style: groove;
+}
+
+
+#fields{
+color:#282E38;
+margin:50px;
+
+}
+
+.fieldlist{
+list-style-type: square;
+font-size:17px;
+
+}
